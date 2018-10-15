@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Q-Learning - created by Ahmet Ataşoğlu</title>
+	<style type="text/css">
+		body {text-align:center; background-color: #E4EFFE; font-family: Tahoma;}
+		#info, #gen-board {color: green; font-size: 13pt;}
+		#gen-board {color: blue;}
+		canvas {display:block; margin:0% auto; border:1px solid black;}
+		footer {margin-top: 16px;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h2>Q-LEARNING Algorithm</h2>
+		<p id="info"><b>ENTER</b> to start.</p>
+		<p>Select Difficulty: 
+			<select id="dif" onchange="setDifficulty(document.getElementById('dif').selectedIndex)">
+				<option value="0">Easy</option>
+				<option value="1" selected>Normal</option>
+				<option value="2">Hard</option>
+			</select>
+		<p id="gen-board"><b>Generation: 0</b></p>
+	</div>
+	<!-- <p>Engelleri yerleştirdikten sonra <b>ENTER</b> tuşuna basın.</p> -->
+	<footer>
+		Ahmet Ataşoğlu / <b>v0.2</b>
+	</footer>
+	<script type="text/javascript" src="assets/p5.min.js"></script>
+	<script type="text/javascript" src="assets/p5.dom.js"></script>
+	<script type="text/javascript" src="assets/sketch.js"></script>
+</body>
+</html>
